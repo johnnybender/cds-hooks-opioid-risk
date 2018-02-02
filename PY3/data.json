@@ -1,0 +1,482 @@
+{
+    "context": {
+        "medications": [
+            {
+                "dateWritten": "2018-02-01",
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{pill}",
+                            "system": "http://unitsofmeasure.org",
+                            "value": "1"
+                        },
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "end": "2018-03-01",
+                                    "start": "2018-02-01"
+                                },
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        }
+                    }
+                ],
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "668364",
+                            "display": "Fentanyl 0.2 MG Buccal Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Fentanyl 0.2 MG Buccal Tablet"
+                },
+                "patient": {
+                    "reference": "Patient/SMART-1288992"
+                },
+                "resourceType": "MedicationOrder",
+                "status": "draft"
+            }
+        ],
+        "patientId": "SMART-1288992"
+    },
+    "fhirServer": "https://api.hspconsortium.org/cdshooksdstu2/open",
+    "hook": "medication-prescribe",
+    "hookInstance": "997192d0-cd56-4578-910a-1b36ced6979e",
+    "patient": "SMART-1288992",
+    "prefetch": {
+        "medications": {
+            "resource": {
+                "entry": [
+                    {
+                        "fullUrl": "https://api.hspconsortium.org/cdshooksdstu2/open/MedicationOrder/SMART-MedicationOrder-142",
+                        "resource": {
+                            "dispenseRequest": {
+                                "expectedSupplyDuration": {
+                                    "code": "d",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "days",
+                                    "value": 90
+                                },
+                                "numberOfRepeatsAllowed": 1,
+                                "quantity": {
+                                    "code": "{tablet}",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "{tablet}",
+                                    "value": 90
+                                }
+                            },
+                            "dosageInstruction": [
+                                {
+                                    "doseQuantity": {
+                                        "code": "{tablet}",
+                                        "system": "http://unitsofmeasure.org",
+                                        "unit": "{tablet}",
+                                        "value": 1
+                                    },
+                                    "text": "1 daily",
+                                    "timing": {
+                                        "repeat": {
+                                            "boundsPeriod": {
+                                                "start": "2008-08-14"
+                                            },
+                                            "frequency": 1,
+                                            "period": 1,
+                                            "periodUnits": "d"
+                                        }
+                                    }
+                                }
+                            ],
+                            "id": "SMART-MedicationOrder-142",
+                            "medicationCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "code": "197770",
+                                        "display": "Hydrochlorothiazide 50 MG Oral Tablet",
+                                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                                    }
+                                ],
+                                "text": "Hydrochlorothiazide 50 MG Oral Tablet"
+                            },
+                            "meta": {
+                                "lastUpdated": "2016-07-06T12:48:01.000+00:00",
+                                "versionId": "1"
+                            },
+                            "patient": {
+                                "reference": "Patient/SMART-1288992"
+                            },
+                            "resourceType": "MedicationOrder",
+                            "status": "active",
+                            "text": {
+                                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      Hydrochlorothiazide 50 MG Oral Tablet (rxnorm: 197770)\n    </div>",
+                                "status": "generated"
+                            }
+                        },
+                        "search": {
+                            "mode": "match"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://api.hspconsortium.org/cdshooksdstu2/open/MedicationOrder/SMART-MedicationOrder-141",
+                        "resource": {
+                            "dispenseRequest": {
+                                "expectedSupplyDuration": {
+                                    "code": "d",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "days",
+                                    "value": 90
+                                },
+                                "numberOfRepeatsAllowed": 1,
+                                "quantity": {
+                                    "code": "{tablet}",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "{tablet}",
+                                    "value": 90
+                                }
+                            },
+                            "dosageInstruction": [
+                                {
+                                    "doseQuantity": {
+                                        "code": "{tablet}",
+                                        "system": "http://unitsofmeasure.org",
+                                        "unit": "{tablet}",
+                                        "value": 1
+                                    },
+                                    "text": "1 qhs",
+                                    "timing": {
+                                        "repeat": {
+                                            "boundsPeriod": {
+                                                "start": "2008-08-14"
+                                            },
+                                            "frequency": 1,
+                                            "period": 1,
+                                            "periodUnits": "d"
+                                        }
+                                    }
+                                }
+                            ],
+                            "id": "SMART-MedicationOrder-141",
+                            "medicationCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "code": "153357",
+                                        "display": "donepezil 10 MG Oral Tablet [Aricept]",
+                                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                                    }
+                                ],
+                                "text": "donepezil 10 MG Oral Tablet [Aricept]"
+                            },
+                            "meta": {
+                                "lastUpdated": "2016-07-06T12:48:01.000+00:00",
+                                "versionId": "1"
+                            },
+                            "patient": {
+                                "reference": "Patient/SMART-1288992"
+                            },
+                            "resourceType": "MedicationOrder",
+                            "status": "active",
+                            "text": {
+                                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      donepezil 10 MG Oral Tablet [Aricept] (rxnorm: 153357)\n    </div>",
+                                "status": "generated"
+                            }
+                        },
+                        "search": {
+                            "mode": "match"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://api.hspconsortium.org/cdshooksdstu2/open/MedicationOrder/SMART-MedicationOrder-140",
+                        "resource": {
+                            "dispenseRequest": {
+                                "expectedSupplyDuration": {
+                                    "code": "d",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "days",
+                                    "value": 90
+                                },
+                                "numberOfRepeatsAllowed": 1,
+                                "quantity": {
+                                    "code": "{tablet}",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "{tablet}",
+                                    "value": 180
+                                }
+                            },
+                            "dosageInstruction": [
+                                {
+                                    "doseQuantity": {
+                                        "code": "{tablet}",
+                                        "system": "http://unitsofmeasure.org",
+                                        "unit": "{tablet}",
+                                        "value": 1
+                                    },
+                                    "text": "1 bid",
+                                    "timing": {
+                                        "repeat": {
+                                            "boundsPeriod": {
+                                                "start": "2008-08-13"
+                                            },
+                                            "frequency": 2,
+                                            "period": 1,
+                                            "periodUnits": "d"
+                                        }
+                                    }
+                                }
+                            ],
+                            "id": "SMART-MedicationOrder-140",
+                            "medicationCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "code": "404673",
+                                        "display": "Memantine 10 MG Oral Tablet [Namenda]",
+                                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                                    }
+                                ],
+                                "text": "Memantine 10 MG Oral Tablet [Namenda]"
+                            },
+                            "meta": {
+                                "lastUpdated": "2016-07-06T12:48:01.000+00:00",
+                                "versionId": "1"
+                            },
+                            "patient": {
+                                "reference": "Patient/SMART-1288992"
+                            },
+                            "resourceType": "MedicationOrder",
+                            "status": "active",
+                            "text": {
+                                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      Memantine 10 MG Oral Tablet [Namenda] (rxnorm: 404673)\n    </div>",
+                                "status": "generated"
+                            }
+                        },
+                        "search": {
+                            "mode": "match"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://api.hspconsortium.org/cdshooksdstu2/open/MedicationOrder/SMART-MedicationOrder-143",
+                        "resource": {
+                            "dispenseRequest": {
+                                "expectedSupplyDuration": {
+                                    "code": "d",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "days",
+                                    "value": 90
+                                },
+                                "numberOfRepeatsAllowed": 1,
+                                "quantity": {
+                                    "code": "{tablet}",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "{tablet}",
+                                    "value": 200
+                                }
+                            },
+                            "dosageInstruction": [
+                                {
+                                    "doseQuantity": {
+                                        "code": "{tablet}",
+                                        "system": "http://unitsofmeasure.org",
+                                        "unit": "{tablet}",
+                                        "value": 1
+                                    },
+                                    "text": "1 daily",
+                                    "timing": {
+                                        "repeat": {
+                                            "boundsPeriod": {
+                                                "start": "2008-09-30"
+                                            },
+                                            "frequency": 1,
+                                            "period": 1,
+                                            "periodUnits": "d"
+                                        }
+                                    }
+                                }
+                            ],
+                            "id": "SMART-MedicationOrder-143",
+                            "medicationCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "code": "199381",
+                                        "display": "potassium citrate 10 MEQ Extended Release Tablet",
+                                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                                    }
+                                ],
+                                "text": "potassium citrate 10 MEQ Extended Release Tablet"
+                            },
+                            "meta": {
+                                "lastUpdated": "2016-07-06T12:48:01.000+00:00",
+                                "versionId": "1"
+                            },
+                            "patient": {
+                                "reference": "Patient/SMART-1288992"
+                            },
+                            "resourceType": "MedicationOrder",
+                            "status": "active",
+                            "text": {
+                                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      potassium citrate 10 MEQ Extended Release Tablet (rxnorm: 199381)\n    </div>",
+                                "status": "generated"
+                            }
+                        },
+                        "search": {
+                            "mode": "match"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://api.hspconsortium.org/cdshooksdstu2/open/MedicationOrder/SMART-MedicationOrder-139",
+                        "resource": {
+                            "dispenseRequest": {
+                                "expectedSupplyDuration": {
+                                    "code": "d",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "days",
+                                    "value": 90
+                                },
+                                "numberOfRepeatsAllowed": 1,
+                                "quantity": {
+                                    "code": "{tablet}",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "{tablet}",
+                                    "value": 90
+                                }
+                            },
+                            "dosageInstruction": [
+                                {
+                                    "doseQuantity": {
+                                        "code": "{tablet}",
+                                        "system": "http://unitsofmeasure.org",
+                                        "unit": "{tablet}",
+                                        "value": 1
+                                    },
+                                    "text": "1 daily",
+                                    "timing": {
+                                        "repeat": {
+                                            "boundsPeriod": {
+                                                "start": "2008-08-13"
+                                            },
+                                            "frequency": 1,
+                                            "period": 1,
+                                            "periodUnits": "d"
+                                        }
+                                    }
+                                }
+                            ],
+                            "id": "SMART-MedicationOrder-139",
+                            "medicationCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "code": "314077",
+                                        "display": "Lisinopril 20 MG Oral Tablet",
+                                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                                    }
+                                ],
+                                "text": "Lisinopril 20 MG Oral Tablet"
+                            },
+                            "meta": {
+                                "lastUpdated": "2016-07-06T12:48:01.000+00:00",
+                                "versionId": "1"
+                            },
+                            "patient": {
+                                "reference": "Patient/SMART-1288992"
+                            },
+                            "resourceType": "MedicationOrder",
+                            "status": "active",
+                            "text": {
+                                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      Lisinopril 20 MG Oral Tablet (rxnorm: 314077)\n    </div>",
+                                "status": "generated"
+                            }
+                        },
+                        "search": {
+                            "mode": "match"
+                        }
+                    }
+                ],
+                "id": "bbd43dd1-320a-47f5-881f-d0b12cda91df",
+                "link": [
+                    {
+                        "relation": "self",
+                        "url": "https://api.hspconsortium.org/cdshooksdstu2/open/MedicationOrder?patient=SMART-1288992"
+                    }
+                ],
+                "meta": {
+                    "lastUpdated": "2018-02-01T21:32:55.900+00:00"
+                },
+                "resourceType": "Bundle",
+                "total": 5,
+                "type": "searchset"
+            },
+            "response": {
+                "status": "200 OK"
+            }
+        },
+        "patient": {
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "1 Hill AveApt 14"
+                        ],
+                        "postalCode": "74117",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1925-12-23",
+                "gender": "male",
+                "id": "SMART-1288992",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical record number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical record number"
+                        },
+                        "use": "usual",
+                        "value": "1288992"
+                    }
+                ],
+                "meta": {
+                    "lastUpdated": "2016-07-06T12:48:01.000+00:00",
+                    "versionId": "1"
+                },
+                "name": [
+                    {
+                        "family": [
+                            "Adams"
+                        ],
+                        "given": [
+                            "Daniel",
+                            "X."
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "daniel.adams@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        <p>Daniel Adams</p>\n      </div>",
+                    "status": "generated"
+                }
+            },
+            "response": {
+                "status": "200 OK"
+            }
+        }
+    },
+    "redirect": "http://sandbox.cds-hooks.org/service-done.html",
+    "user": "Practitioner/example"
+}
