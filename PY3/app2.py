@@ -9,9 +9,7 @@ with open('Fentanyl.csv', 'rb') as f:
 with open('data.json') as json_data:
     x = json.load(json_data)
     number = x['context']['medications'][0]['medicationCodeableConcept']['coding'][0]['code']
-    int(number)
-    print(number)
-    if number in values:
+    if str(number) in values:
         print("success")
     else:
         print(number)

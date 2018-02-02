@@ -2,21 +2,21 @@
     "context": {
         "medications": [
             {
-                "dateWritten": "2018-02-01",
+                "dateWritten": "2018-02-02",
                 "dosageInstruction": [
                     {
                         "doseQuantity": {
                             "code": "{pill}",
                             "system": "http://unitsofmeasure.org",
-                            "value": "1"
+                            "value": 1
                         },
                         "timing": {
                             "repeat": {
                                 "boundsPeriod": {
-                                    "end": "2018-03-01",
-                                    "start": "2018-02-01"
+                                    "end": "2018-03-02",
+                                    "start": "2018-02-02"
                                 },
-                                "frequency": 3,
+                                "frequency": 1,
                                 "period": 1,
                                 "periodUnits": "d"
                             }
@@ -44,7 +44,7 @@
     },
     "fhirServer": "https://api.hspconsortium.org/cdshooksdstu2/open",
     "hook": "medication-prescribe",
-    "hookInstance": "997192d0-cd56-4578-910a-1b36ced6979e",
+    "hookInstance": "21f9878b-d4de-492b-b10b-d2ee01419688",
     "patient": "SMART-1288992",
     "prefetch": {
         "medications": {
@@ -391,7 +391,7 @@
                         }
                     }
                 ],
-                "id": "bbd43dd1-320a-47f5-881f-d0b12cda91df",
+                "id": "5d17a15d-263a-44d2-a711-2146cdb1badb",
                 "link": [
                     {
                         "relation": "self",
@@ -399,7 +399,7 @@
                     }
                 ],
                 "meta": {
-                    "lastUpdated": "2018-02-01T21:32:55.900+00:00"
+                    "lastUpdated": "2018-02-02T14:32:18.039+00:00"
                 },
                 "resourceType": "Bundle",
                 "total": 5,
@@ -477,6 +477,6 @@
             }
         }
     },
-    "redirect": "http://sandbox.cds-hooks.org/service-done.html",
+    "redirect": "https://sandbox.cds-hooks.org/service-done.html",
     "user": "Practitioner/example"
 }

@@ -73,7 +73,6 @@ def api_risk_stratification():
                 }
             ]
         }
-        return "no cards"
         return json.dumps(cards)
     else:
         return "415 Unsupported Media Type ;)"
