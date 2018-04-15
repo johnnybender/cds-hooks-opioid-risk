@@ -4,4 +4,4 @@ This project was created during the [US/UK Data Analyst Exchange Program](https:
 
 # Usage
 
-Fork / download this repository. Documentation for the project is in the "documentation" folder. The application is the "app.py" file in the "PY3" folder. Virtual environment, and functionality to only display CDSHooks card based on type of medication prescribed have not been added. Start the Flask server and add the CDS Service to demo here: [CDSHooks Sandbox](https://sandbox.cds-hooks.org/) For any questions, please feel free to email: johnphillipbender@gmail.com
+Fork / download this repository. Documentation for the project is in the "documentation" folder. The application is the "app.py" file in the "PY3" folder. Virtual environment, and functionality to only display CDSHooks card based on type of medication prescribed have not been added. Start the Flask server and add the CDS Service to demo here: [CDSHooks Sandbox](https://sandbox.cds-hooks.org/) For any questions, please feel free to email: johnphillipbender@gmail.com.
