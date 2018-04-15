@@ -26,12 +26,12 @@
                 "medicationCodeableConcept": {
                     "coding": [
                         {
-                            "code": "668364",
-                            "display": "Fentanyl 0.2 MG Buccal Tablet",
+                            "code": "668624",
+                            "display": "Fentanyl 0.2 MG Buccal Tablet [Fentora]",
                             "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
                         }
                     ],
-                    "text": "Fentanyl 0.2 MG Buccal Tablet"
+                    "text": "Fentanyl 0.2 MG Buccal Tablet [Fentora]"
                 },
                 "patient": {
                     "reference": "Patient/SMART-1288992"
@@ -44,7 +44,7 @@
     },
     "fhirServer": "https://api.hspconsortium.org/cdshooksdstu2/open",
     "hook": "medication-prescribe",
-    "hookInstance": "21f9878b-d4de-492b-b10b-d2ee01419688",
+    "hookInstance": "dadcfbd8-fa30-49a4-95c1-e61e0f814be0",
     "patient": "SMART-1288992",
     "prefetch": {
         "medications": {
@@ -391,7 +391,7 @@
                         }
                     }
                 ],
-                "id": "5d17a15d-263a-44d2-a711-2146cdb1badb",
+                "id": "3249082a-f364-4311-9b6d-4c745c7db419",
                 "link": [
                     {
                         "relation": "self",
@@ -399,7 +399,7 @@
                     }
                 ],
                 "meta": {
-                    "lastUpdated": "2018-02-02T14:32:18.039+00:00"
+                    "lastUpdated": "2018-02-02T15:06:19.482+00:00"
                 },
                 "resourceType": "Bundle",
                 "total": 5,
